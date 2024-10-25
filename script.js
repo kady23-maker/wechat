@@ -41,3 +41,17 @@ function getResponse(userInput) {
 
     return responses[userInput.toLowerCase()] || "Maaf, saya belum mengerti itu. Coba pertanyaan lain.";
 }
+function getResponse(userInput) {
+    // Tambahkan lebih banyak kata kunci dan respons di sini
+    const responses = {
+        "hai": "Hai! Ada yang bisa saya bantu?",
+        "halo": "Halo! Selamat datang di obrolan.",
+        "kabar": "Saya baik, terima kasih sudah bertanya!",
+        "nama": "Saya adalah AI sederhana yang siap membantu Anda.",
+        "siapa kamu": "Saya adalah bot yang siap membantu Anda."
+        // Tambahkan pertanyaan lain dan respons yang sesuai di sini
+    };
+
+    // Jika input ada di responses, kembalikan respons, jika tidak beri default
+    return responses[userInput.toLowerCase()] || "Maaf, saya belum mengerti itu. Coba pertanyaan lain.";
+}
